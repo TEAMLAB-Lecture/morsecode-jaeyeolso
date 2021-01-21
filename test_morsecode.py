@@ -85,7 +85,7 @@ class TestMorseCode(unittest.TestCase):
         self.assertEqual(mc.decoding_sentence(".. -- ."), "IME")
 
     def test_encoding_sentence(self):
-        self.assertEqual((mc.encoding_sentence("Sungchul    CHOI") ).strip(), "... ..- -. --. -.-. .... ..- .-..  -.-. .... --- ..")
+        self.assertEqual((mc.encoding_sentence("Sungchul    CHOI")).strip(), "... ..- -. --. -.-. .... ..- .-..  -.-. .... --- ..")
         self.assertEqual((mc.encoding_sentence("GACHON UNIV.!")).strip(), "--. .- -.-. .... --- -.  ..- -. .. ...-")
         self.assertEqual((mc.encoding_sentence("HI! Fine Thank, you.")).strip(), ".... ..  ..-. .. -. .  - .... .- -. -.-  -.-- --- ..-")
         self.assertEqual((mc.encoding_sentence("WHERE ARE YOU GOING?")).strip(), ".-- .... . .-. .  .- .-. .  -.-- --- ..-  --. --- .. -. --.")
